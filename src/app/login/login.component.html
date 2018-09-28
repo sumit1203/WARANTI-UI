@@ -1,0 +1,151 @@
+<!-- HEADER -->
+<header id="header">
+  <div class="nav-wrapper container">
+    <div class="header-logo">
+      <a href="" class="nav-logo">		
+      <span class="fa-stack">
+        <i class="fa fa-check fa-stack-1x"></i>
+        <i class="fa fa-shield fa-stack-2x"></i>
+      </span>		
+      Waranti
+    </a>
+    </div>
+  </div>
+  </header>
+  <!-- END HEADER -->
+  
+  <!-- CONTENT -->
+  <div id="page-content">
+    <div class="login-form">
+      <div class="container">
+        <div class="row">
+          <div class="col s12">
+            <div class="section-title">
+              <span class="theme-secondary-color">LOG </span> IN
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <form class="col s12">
+            <div class="row">
+                <div class="form-group col s12 m6 l4 offset-m3 offset-l4">
+                    <input type="text" class="form-control" required>
+                    <label class="form-control-placeholder">Mobile Number</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col s12 m6 l4 offset-m3 offset-l4">
+                    <input type="password" class="form-control" required>
+                    <label class="form-control-placeholder">Password</label>
+                </div>
+            </div>
+            <div class="row">
+              <div class="col s12 m6 l4 offset-m3 offset-l4 center">
+                <!-- <input class="waves-effect waves-light btn" value="LOG IN" type="submit"> -->
+                <a class="waves-effect waves-light btn" href="warantiList.html">LOG IN</a>
+        </div>
+            </div>
+        
+          </form>
+        </div>
+        <div class="row fp-text">
+          <div class="col s12">
+            <div class="forgot-password-link">
+              <a class="modalTriggerBtn" href="javascript:void(0);" (click)="isPopup = !isPopup">Forgot Password</a>
+            </div>
+          </div>
+        </div>
+      <div class="row">
+      <div class="input-field col s12 m6 l4 offset-m3 offset-l4">
+        <div class="or-line">
+        <div class="ol-or">OR</div>
+        <div class="ol-line"></div>
+        </div>
+      </div>
+      </div>
+      <div class="row">
+      <div class="input-field col s12 m6 l4 offset-m3 offset-l4 center">
+        <input  class="waves-effect waves-light btn" value="LOG IN WITH OTP" type="submit"></div>
+      </div>
+      </div>
+    </div>
+  </div>
+  <!-- END CONTENT-->
+  <!-- FOOTER  -->
+  <footer id="footer">
+  <div class="footer-info">
+    <div class="container">
+      <div class="col s12 center">
+        <i class="fa fa-map-marker"></i> Office No. 901, 9<sup>th</sup>-Floor, Platinum Square, Viman Nagar , India<br>
+        <i class="fa fa-phone"></i> (+91)-982-2712147 <br>
+        <i class="fa fa-envelope-o"></i> sales@dahlia-tech.com
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row row-footer-icon">
+      <div class="col s12">
+        <div class="footer-sosmed-icon ">
+          <div class="wrap-circle-sosmed ">
+            <a href="#">
+            <div class="circle-sosmed">
+              <i class="fa fa-instagram"></i>
+            </div>
+            </a>
+          </div>
+          <div class="wrap-circle-sosmed ">
+            <a href="#">
+            <div class="circle-sosmed">
+              <i class="fa fa-linkedin"></i>
+            </div>
+            </a>
+          </div>
+          <div class="wrap-circle-sosmed ">
+            <a href="#">
+            <div class="circle-sosmed">
+              <i class="fa fa-twitter"></i>
+            </div>
+            </a>
+          </div>
+          <div class="wrap-circle-sosmed ">
+            <a href="#">
+            <div class="circle-sosmed">
+              <i class="fa fa-facebook-f"></i>
+            </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row copyright">
+       2018 <span>Waranti</span>, All rights reserved.
+    </div>
+  </div>
+  </footer>
+  <!-- END FOOTER -->
+  
+  <div id="ForgotPasswordModal" class="modalBox" [ngStyle]="{'display':isPopup == false ? 'none' : 'block' }">
+      <!-- Modal content -->
+      <div class="modalBox-content modal-sm">
+      <div class="modalBox-header">
+        <span class="close waves-effect" data-target="data-close-modal"  (click)="isPopup = !isPopup">×</span>
+        <h2>Forgot Password</h2>
+      </div>
+      <div class="modalBox-body">
+        <p>Please enter registered email id.</p>
+        <br>
+        <form class="col s12">
+            <div class="row">
+                <div class="form-group col s12">
+                    <input type="text" class="form-control" required>
+                    <label class="form-control-placeholder">Mobile Number</label>
+                </div>
+            </div>
+            <div class="center">
+              <button class="btn">SEND</button>
+              <button type="button" class="btn" (click)="isPopup = !isPopup">CANCEL</button>
+            </div>
+        </form>
+      </div>
+      </div>
+    </div>
