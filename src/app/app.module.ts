@@ -7,6 +7,8 @@ import { FooterComponent } from './theme/layouts/footer/footer.component';
 import { AsideNavComponent } from './theme/layouts/aside-nav/aside-nav.component';
 import { AppRoutingModule } from './app-routing.module';
 import { LoginComponent } from './login/login.component';
+import { ConsumerComponent } from './consumer/consumer.component';
+import { MerchantComponent } from './merchant/merchant.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { LoginComponent } from './login/login.component';
     HeaderNavComponent,
     FooterComponent,
     AsideNavComponent,
-    LoginComponent
+    LoginComponent,
+    ConsumerComponent,
+    MerchantComponent
   ],
   imports: [
     BrowserModule,

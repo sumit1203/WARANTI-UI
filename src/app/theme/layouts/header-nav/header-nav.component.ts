@@ -7,7 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderNavComponent implements OnInit {
 
-  constructor() { }
+  isMenuBox = false;
+  constructor() { 
+    this.isMenuBox = false;
+  }
 
   ngOnInit() {
   }

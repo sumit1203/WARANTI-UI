@@ -1,0 +1,29 @@
+<app-header-nav></app-header-nav>
+<table>
+    <thead>
+        <tr>
+            <th>Code</th>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>Annual Salary</th>
+            <th>Date of Birth</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor='let consumer of consumers'>
+            <td>{{consumer.code}}</td>
+            <td>{{consumer.name}}</td>
+            <td>{{consumer.gender}}</td>
+            <td>{{consumer.annualSalary}}</td>
+            <td>{{consumer.dateOfBirth}}</td>
+        </tr>
+        <tr *ngIf="!consumers || consumers.length==0">
+            <td colspan="5">
+                No employees to display
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<app-footer></app-footer>
+

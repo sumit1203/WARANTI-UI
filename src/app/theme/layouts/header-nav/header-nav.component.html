@@ -11,7 +11,7 @@
     </a>
     </div>
     <div class="header-menu-button">
-      <a href="#" data-activates="nav-mobile-menu" class="button-collapse" id="button-collapse-menu">
+      <a href="javascript:void(0);" data-activates="nav-mobile-menu" class="button-collapse" id="button-collapse-menu" (click)="isMenuBox = !isMenuBox">
       <div class="cst-btn-menu">
         <i class="fa fa-align-right fa-2x"></i>
       </div>
@@ -26,3 +26,4 @@
   </div>
   </header>
   <!-- END HEADER -->
+  <app-aside-nav></app-aside-nav>
